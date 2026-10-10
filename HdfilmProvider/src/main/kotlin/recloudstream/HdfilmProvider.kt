@@ -87,7 +87,7 @@ class HdfilmProvider : MainAPI() {
         }
     }
 
-    private suspend fun VideoDetailResponseDailymotionProvider.toLoadResponse(provider: HdfilmProvider): LoadResponse {
+    private suspend fun VideoDetailResponseHdfilmProvider.toLoadResponse(provider: HdfilmProvider): LoadResponse {
         return provider.newMovieLoadResponse(
             this.title,
             "https://www.dailymotion.com/video/${this.id}",
