@@ -77,7 +77,7 @@ class HdfilmProvider : MainAPI() {
         return videoDetail.toLoadResponse(this)
     }
 
-    private fun VideoItem.toSearchResponse(provider: DailymotionProvider): SearchResponse {
+    private fun VideoItem.toSearchResponse(provider: HdfilmProvider): SearchResponse {
         return provider.newMovieSearchResponse(
             this.title,
             "https://www.dailymotion.com/video/${this.id}",
@@ -87,7 +87,7 @@ class HdfilmProvider : MainAPI() {
         }
     }
 
-    private suspend fun VideoDetailResponse.toLoadResponse(provider: DailymotionProvider): LoadResponse {
+    private suspend fun VideoDetailResponseDailymotionProvider.toLoadResponse(provider: HdfilmProvider): LoadResponse {
         return provider.newMovieLoadResponse(
             this.title,
             "https://www.dailymotion.com/video/${this.id}",
