@@ -4,7 +4,7 @@ version = 4
 cloudstream {
     // All of these properties are optional, you can safely remove any of them.
 
-    description = "Watch content from Dailymotion"
+    description = "Watch content from Hdfilm"
     authors = listOf("Luna712")
 
     /**
