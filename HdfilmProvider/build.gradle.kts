@@ -14,7 +14,7 @@ cloudstream {
      * 2: Slow
      * 3: Beta-only
      */
-    status = 1 // Will be 3 if unspecified
+    status = 6 // Will be 3 if unspecified
 
     tvTypes = listOf("Others")
     iconUrl = "https://www.google.com/s2/favicons?domain=www.dailymotion.com&sz=%size%"
