@@ -20,7 +20,7 @@ import com.lagradost.cloudstream3.utils.ExtractorLink
 import com.lagradost.cloudstream3.utils.StringUtils.encodeUri
 import com.lagradost.cloudstream3.utils.loadExtractor
 
-class DailymotionProvider : MainAPI() {
+class HdfilmProvider : MainAPI() {
 
     data class VideoSearchResponse(
         @JsonProperty("list") val list: List<VideoItem>
